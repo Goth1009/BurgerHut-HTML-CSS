@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rampart+One&family=Roboto+Mono&family=Ubuntu:wght@500&display=swap');
+
+
+body{
+	margin:0;
+	padding:0;
+	background-color: #fff;
+	background-size:cover;
+	font-family:sans-serif;
+	
+}
+
+#box{
+    margin-top: 300px;
+	width: 600px;
+	height:850px;
+	background:linear-gradient(-50deg,#555154 ,#e8ecec);
+	color:#051f38;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    box-sizing:border;
+    padding:70px 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.938);
+    line-height: 2px;	
+}
+
+
+.image{
+    width: 100px;
+    height: 100px;
+    padding-top: 0px;
+}
+.image{
+    border-radius: 50%;
+    width:125px;
+	height:125px;
+	position:absolute;
+	top:-50px;
+	left:calc(50% -50px);
+}
+h1{
+	margin:0;
+	padding-top:25px;
+	font-size:30px;
+    color: #680d79;
+    margin-top: 20px;
+    font-family: Rampart One;
+    text-align: center;
+}
+
+.fill{
+    display: grid;
+    padding-bottom: 40px;
+    font-weight: 700;
+}
+h3{
+    padding-top: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: darkred;
+    font-family: Ubuntu;
+    font-weight: 800;
+    font-size: 30px;
+}
+.text{
+    height: 32px;
+    border-radius: 10px;
+}
+
+#comments{
+    border-radius: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: silver;
+    cursor: pointer;
+    font-size: 17px;
+    background: #201e20;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0, 3) 0px 3px 4px 0px, rgba(0, 0, 0, 0, 15) 0px 3px 8px 5px;
+}
+button a{
+    color: #16b3b3 ;
+    text-decoration: none;
+    font-weight: 800;
+}
+button :hover{
+    color: rgb(150, 29, 8);
+}
+.btn1{
+    width: 20%;
+    margin-left: 15px;
+}
+.btn2{
+    width: 20%;
+    margin-left: 320px;
+}
+
+.follow{
+    background: linear-gradient(-50deg,#0e0255 ,#477de0);
+    border-radius: 50px;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.follow h2{
+    text-align: center;
+    font-weight: 1000;
+    color: rgb(6, 2, 26);
+}
+
+.follow h2 input[type="submit"]
+{
+	border:none;
+	outline:none;
+    font-weight: 1000;
+	height:40px;
+	background:#052f51;
+	color:#98aae2;
+	font-size:18px;
+	border-radius:20px;
+}
+.follow h2 input[type="submit"]:hover
+{
+	cursor:pointer;
+	background:#730994;
+	color:#b89b1c;
+}
+.follow h2 input[type="submit"]
+{
+    padding-right: 10px;
+    
+}
+
+
+
+@media (max-width:991px){
+    body{
+        font-size: 85%;
+    } 
+    h1{
+        font-size: 85%;
+    }
+    h3{
+        font-size: 85%;
+    }
+
+}

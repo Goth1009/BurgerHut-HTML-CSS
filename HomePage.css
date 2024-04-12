@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&family=Genos:wght@600&family=Khand&family=Lobster&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Oooh+Baby&family=Open+Sans:ital,wght@1,300&family=Permanent+Marker&family=Poppins:wght@300;500&family=Rampart+One&family=Roboto&family=Roboto+Mono&family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&family=Genos:wght@600&family=Kaushan+Script&family=Khand&family=Lobster&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Oooh+Baby&family=Open+Sans:ital,wght@1,300&family=Permanent+Marker&family=Poppins:wght@300;500&family=Rampart+One&family=Roboto&family=Roboto+Mono&family=Ubuntu:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Khand;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.85));
+    background: url(images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+}
+.topic{
+    color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+ul li{
+    display: inline-block;
+    font-weight: 800;
+    padding: 5px 25px;
+    margin-right: 30px;
+    position: relative;
+}
+ul li a{
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 1.5em;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: yellow;
+}
+ul li:hover::before{
+    width: 100%;
+}
+.banner_text{
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    height: 1px;
+    text-align: center;
+}
+.header_text{
+    font-weight: bold;
+    font-size: 5em;
+    color: yellow;
+    display: inline-block;
+    font-family: Kaushan Script;
+}
+p{
+    font-size: 2em;
+    color: white;
+    padding: 5px 0;
+    line-height: 2em;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+}
+.btn{
+    margin: 30px;
+    display: inline-block;
+}
+.btn a{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: 2px solid yellow;
+    margin: 0 10px;
+    position: relative;
+    border-radius: 2em;
+    text-decoration: none;
+    z-index: 1;
+    color: white;
+}
+span{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-radius: 2em;
+    left: 0;
+    top: 0;
+    background: yellow;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn a:hover span{
+    width: 100%;
+}
+.btn a:hover{
+    color: blue;
+    border: none;
+}

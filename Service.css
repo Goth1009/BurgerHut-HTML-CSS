@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&family=Lobster&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Open+Sans:ital,wght@1,300&family=Poppins:wght@500&family=Rampart+One&family=Roboto&family=Roboto+Mono&family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&family=Lobster&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Open+Sans:ital,wght@1,300&family=Permanent+Marker&family=Poppins:wght@500&family=Rampart+One&family=Roboto&family=Roboto+Mono&family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&family=Genos:wght@600&family=Lobster&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Open+Sans:ital,wght@1,300&family=Permanent+Marker&family=Poppins:wght@500&family=Rampart+One&family=Roboto&family=Roboto+Mono&family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&family=Genos:wght@600&family=Lobster&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Oooh+Baby&family=Open+Sans:ital,wght@1,300&family=Permanent+Marker&family=Poppins:wght@300;500&family=Rampart+One&family=Roboto&family=Roboto+Mono&family=Ubuntu:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: silver;
+    cursor: pointer;
+    font-size: 17px;
+    background:  rgb(122, 20, 13);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0, 3) 0px 3px 4px 0px, rgba(0, 0, 0, 0, 15) 0px 3px 8px 5px;
+    margin-right: 10px;
+}
+button a{
+    color: #FBFCFC ;
+    text-decoration: none;
+    font-weight: 800;
+}
+button :hover{
+    color: #dfd10b;
+}
+.btn{
+    width: 10%;
+}
+
+#wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(images/page.jpg);
+    background-size: cover;
+    padding-top: 35px;
+    font-family: 'raleway' , sans-serif;
+}
+
+#wrapper h1{
+    font-size: 5em;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    font-family: Genos;
+    font-weight: 2000;
+    color: #0a7579 ;
+    background: linear-gradient(-50deg, #2a790a, #d0df0b);
+    border-radius: 10px;
+    /*text-shadow: sandybrown;*/
+}
+
+.content-box{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 35px;
+}
+
+.card{
+    min-height: 220px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background: rgb(247, 253, 253);
+    margin: 10px 5px;
+    transition: 0.3s;
+}
+
+.card i{
+    margin-bottom: 20px;
+    color: #ff5724;
+}
+
+.card h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card a{
+    text-decoration: none;
+    color: rgb(202, 48, 37);
+}
+
+.card p{
+    color: #6c757d;
+    text-align: center;
+}
+/*problem here*/
+.card:hover {
+    background: linear-gradient(-25deg,#120730 ,#4a48b1,#7aa8e6,#c5e2e7);
+    opacity: 0.8;
+    color: #fff;
+}
+
+.card:hover p{
+    color: #fff;
+}
+
+.card:hover i{
+    color: rgb(215, 230, 16);
+}
+
+/*--Styling footer section--*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Poppins;
+    margin-top: 10px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container .sec{
+    margin-right: 30px;
+}
+footer .container .sec.about{
+    width: 40%;    
+}
+footer .container h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 110px;
+    height: 2px;
+    background: #f00;
+}
+footer p{
+    color: #999;
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sci li a:hover{
+    background: #f00;
+}
+.sci li a .fas{
+    color: #fff;
+    font-size: 20px;
+}
+.sci li a .fab{
+    color: #fff;
+    font-size: 20px;
+}
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+.quickLinks ul li{
+    list-style: none;
+}
+.quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quickLinks a:hover{
+    color: #fff;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+.contact .info li a:hover{
+    color: #fff;
+}
+.copyright{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+    font-family: poppins;
+}
+
+
+/*----media queries for responsiveness----*/ 
+@media(max-width: 991px)
+{
+    #wrapper h1{
+        font-size: 2.5em;
+    }
+    #wrapper p{
+        padding: 5px 15px;
+    }
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+@media (max-width: 991px)
+{
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container .sec.about,
+    .quickLinks,
+    .contact{
+        width: 100%;
+    }
+    .copyright{
+        padding: 8px 40px;
+    }
+}
+
